@@ -34,7 +34,8 @@ app.use((req, res) => {
 
 // ----- Connect to MongoDB, then start the server -----
 const PORT = process.env.PORT || 5000;
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/TaskTracker';
+const MONGO_URI = process.env.MONGO_URI ||
+'mongodb+srv:/vj323586_db_user:Vaibhav335@cluster0.jpbekaw.mongodb.net/taskTracker?appName=Cluster0'
 
 mongoose
   .connect(MONGO_URI)
