@@ -4,7 +4,7 @@ import TaskList from './components/TaskList'
 import './App.css'
 
 // Base URL of the backend API - comes from .env, falls back to localhost
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/tasks'
+const API_URL = import.meta.env.VITE_API_URL || 'https://taskmanager-l0bs.onrender.com/api/tasks'
 
 function App() {
   const [tasks, setTasks] = useState([])
